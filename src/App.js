@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import Animal from "./Components/Animal"
 
 function App() {
+  // const lion = new AnimalComponent({ name: 'Leo', species: 'Lion' });
+  const giraffe = new Animal({height: '400miles'});
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Animal height='400miles'/>
     </div>
   );
 }
